@@ -18,9 +18,7 @@ public final class Autos {
   private static final String kMiddleAuto = "Middle";
   private String m_autoSelected;
   private final SendableChooser<String> m_chooser = new SendableChooser<>();
-  // ADD CHOOSER CODE HERE   ********
-  // ADD CHOOSER CODE HERE   ********
-  // ADD CHOOSER CODE HERE   ********
+  // ADDED CHOOSER CODE ABOVE   ********
 
   // FIRST AUTON -Left side-
   public static Command autoSideLeft(DriveTrain drive, Arm arm, Intake intake) {
@@ -60,7 +58,6 @@ public final class Autos {
     // alongWith(arm.moveArmToPosition(ArmConstants.positionRemoveAlgaeLow)).repeatedly();
 }
   
-
   private Autos() {
     throw new UnsupportedOperationException("This is a utility class!");
   }
