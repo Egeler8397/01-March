@@ -18,7 +18,6 @@ import com.revrobotics.spark.SparkLowLevel.MotorType;
 import com.revrobotics.spark.config.SparkMaxConfig;
 import com.revrobotics.spark.config.SparkBaseConfig.IdleMode;
 
-
 public class Arm extends SubsystemBase {
   SparkMax armMotor1, armMotor2;
   SparkMaxConfig armMotor1Config, armMotor2Config;
@@ -26,7 +25,6 @@ public class Arm extends SubsystemBase {
   PIDController armP;
   Double armFrontLimit, armRearLimit, armVelocityLimit;
   
-
   /** Creates a new Arm. */
   public Arm() {
     armMotor1 = new SparkMax(6, MotorType.kBrushless);  // to Brushless 2/27 TE
@@ -52,7 +50,6 @@ public class Arm extends SubsystemBase {
     armP = new PIDController(ArmConstants.armkP, ArmConstants.armkI, ArmConstants.armkD);
 
   }
-
 
   public Command moveArmToPosition(Double position) {
     return run(
